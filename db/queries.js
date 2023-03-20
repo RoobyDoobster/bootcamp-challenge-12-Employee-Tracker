@@ -86,4 +86,4 @@ function updateEmployee(id, role_id) {
     });
 }
 
-module.exports = { selectDepartment, insertDepartment, selectRole, insertRole, SelectEmployee, insertEmployee, updateEmployee}
+module.exports = { selectDepartment, insertDepartment, selectRole, insertRole, selectEmployee, insertEmployee, updateEmployee}
