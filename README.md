@@ -14,6 +14,10 @@ An application that allows you to enter departments, jobs, and employees into vi
 
 Run with "node index.js", select what you would like to do and answer the questions.
 
+
+https://user-images.githubusercontent.com/114878148/229013209-b1519beb-a52a-467c-a647-e11752c3d1e1.mp4
+
+
 ## Authors
 
 Reuben Schmolke [Github](https://github.com/RoobyDoobster)
