@@ -57,7 +57,7 @@ function selectEmployee() {
     FROM roles
     INNER JOIN employees ON roles.id = employees.role_id
     LEFT JOIN departments ON roles.department_id = departments.id
-    LEFT JOIN employees managers ON employees.manager_id = mangers.id;`, (err, result) => {
+    LEFT JOIN employees managers ON employees.manager_id = managers.id;`, (err, result) => {
         if(err) {
             console.log(err);
         }

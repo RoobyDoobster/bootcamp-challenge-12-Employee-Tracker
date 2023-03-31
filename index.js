@@ -1,5 +1,5 @@
-const inquirer = require('inquirer');
-const queries = require('./db/queries.js');
+const inquirer = require("inquirer");
+const queries = require("./db/queries");
 
 const QuestionPrompts = {
     main: 'Choose a table to interact with',
@@ -131,12 +131,12 @@ function addRole() {
     inquirer.prompt([
         {
             type: 'input',
-            message: 'Enter role name',
-            name: 'name',
+            message: 'Enter role title',
+            name: 'title',
         },
         {
             type: 'input',
-            message: 'Enter Salary',
+            message: 'Enter role salary',
             name: 'salary',
         },
         {
@@ -145,11 +145,10 @@ function addRole() {
             name: 'department_id',
         },
     ]).then((value) => {
-        queries.insertRolesTable(value.title, value.salary, value.department_id);
+        queries.insertRole(value.title, value.salary, value.department_id);
         main();
     })
 }
-
 function employees() {
     inquirer.prompt([
         {
